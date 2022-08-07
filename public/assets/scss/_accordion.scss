@@ -1,0 +1,72 @@
+.settings-container {
+padding: 2rem 0;
+  .card {
+    margin-bottom: 2rem;
+    background: $dark;
+    color: $white;
+    border-radius: $br*3;
+    border: 1px solid rgba($white, .3);
+
+    .card-header {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+
+      .btn {
+        width: 100%;
+        justify-content: flex-start;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid transparent;
+        position: relative;
+        background: transparent;
+        @include transition;
+        border-radius: $br*3 $br*3 0 0;
+        padding: 1rem 2rem;
+
+        &:after {
+          width: 4rem;
+          content: '\eb88';
+          font-family: 'fluenticons' !important;
+          position: absolute;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include transition;
+          transform: rotate(0deg);
+        }
+
+        &:not(.collapsed) {
+          border-color: rgba($white, .3);
+          color: $warning;
+          background: rgba($warning, .03);
+
+          &::after {
+            transform: rotate(180deg);
+          }
+        }
+
+       
+      }
+    }
+
+    .card-body {
+      @media (min-width:992px) {
+        padding: 2rem;
+      }
+    }
+  }
+
+  @media (min-width:992px) {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,79 @@
+// Bootstrap Theming Customization
+
+
+$primary:#203B2C;
+$secondary:#BEBFC4;
+$kismat:#30CC64;
+$success:#198754;
+$info:#11caf0;
+$warning:#E9C662;
+$danger:#dc3545;
+$light:#f8f9fa;
+$white:#ffffff;
+$dark:#060E10;
+
+$darkBg:#171717;
+
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "kismat": $kismat,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "white": $white,
+  "dark": $dark);
+
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1500px);
+
+$box-shadow-sm:0px 3px 6px rgba($dark, 0.04);
+
+
+$br:.25rem;
+$topTenSwiperHeight:22rem;
+
+$lgNavbarHeight: 4.5rem;
+$lpLogoHeight:3.5rem;
+$sidemenuWidth:22rem;
+
+
+
+// Grayscale colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+// Grayscale colors Map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+
+
+// Images
+$sectionShowsBg:url(../imgs/parallax/bg-parallax-show.png);
+$subscribeBg:url(../imgs/subscribe-bg.png);
+$paymentPageBg:url(../imgs/bg-image-grid.png);
+$selectArrow:url(../imgs/arrow-select.svg);
+$landingHeaderBG: url('../imgs/wavey-fingerprint.svg');
+
+
